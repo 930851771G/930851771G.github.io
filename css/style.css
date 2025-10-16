@@ -40,9 +40,9 @@
   --highlight-aqua: #479d9d;
   --highlight-blue: #1973b8;
   --highlight-purple: #7135ac;
-  --cursor-default: url("../images/cursor/reimu-cursor-default.png"), auto;
+  --cursor-default: url("../images/cursor/1.png"), auto;
   --cursor-pointer: url("../images/cursor/reimu-cursor-pointer.png"), pointer;
-  --cursor-text: url("../images/cursor/reimu-cursor-text.png"), text;
+  --cursor-text: url("../images/cursor/jf2.png"), text;
   --footer-icon: url("../images/taichi.png");
   --sponsor-icon: url("../images/taichi.png");
   --top-icon: url("../images/taichi.png");
@@ -1376,6 +1376,16 @@ button {
   display: block;
   max-width: 100%;
   margin: 0 auto;
+}
+mjx-container {
+  display: inline-grid;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  min-width: auto !important;
+}
+mjx-container::-webkit-scrollbar {
+  display: none;
 }
 .post-link {
   position: absolute;

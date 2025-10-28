@@ -238,7 +238,7 @@
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>Post</div>
-    <div class="sidebar-state-number">1</div>
+    <div class="sidebar-state-number">2</div>
   </div>
   <div class="sidebar-state-category">
     <div>Category</div>
@@ -246,7 +246,7 @@
   </div>
   <div class="sidebar-state-tag">
     <div>Tag</div>
-    <div class="sidebar-state-number">1</div>
+    <div class="sidebar-state-number">2</div>
   </div>
 </div>
 <div class="sidebar-social">
@@ -319,10 +319,54 @@
       <div class="post-wrapper">
   <div class="post-wrap left" data-aos="fade-up">
     
-      <a class="post-link" href="/2025/10/22/blog-setup-tutorial/" aria-label="blog_setup_tutorial" title="blog_setup_tutorial"></a>
+      <a class="post-link" href="/2025/10/28/Tiger-paper/" aria-label="Tiger_paper" title="Tiger_paper"></a>
     
     
     <div class="post-cover left">
+      
+        <img data-src="/images/cover/jett1.webp" data-sizes="auto" alt="Tiger_paper" class="lazyload">
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2025-10-28</span>
+        
+        <span><span class="icon-pencil"></span>3.2k words</span>
+        <span><span class="icon-clock"></span>14 mins</span>
+      </div>
+      <h2 class="post-title">Tiger_paper</h2>
+      <article class="post-article">
+        
+           生成式推荐
+tiger作为生成式推荐里极具代表性的文章，本文主要总结TIGER的流程。
+
+总结整个tiger实际流程
+
+
+总体来看分为两个部分。(分为两个阶段每一个阶段独立训练，第一个阶段完成之后再开始第二个阶段)
+
+第一个阶段.RQVAE
+有三部分：
+1.DNN encoder把经过LLM得到的item embedding转换为潜在的表示。
+2.残差量化器输出Item的量化表示。
+3.DNN decoder把量化表示返回为语义embedding
+训练是为了让整个RQVAE学习到的语义ID更加符合实际情况。
+每一个物品与最后对应的语义ID记录下来，用户第二阶段的推荐。
+第二阶段. 序列到序列
+        
+      </article>
+    </div>
+  </div>
+</div>
+      
+    
+      <div class="post-wrapper">
+  <div class="post-wrap right" data-aos="fade-up">
+    
+      <a class="post-link" href="/2025/10/22/blog-setup-tutorial/" aria-label="blog_setup_tutorial" title="blog_setup_tutorial"></a>
+    
+    
+    <div class="post-cover right">
       
         <img data-src="/images/cover/clove1.webp" data-sizes="auto" alt="blog_setup_tutorial" class="lazyload">
       
@@ -391,10 +435,10 @@
     
       <div>
         <span class="icon-brush"></span>
-        924
+        4.1k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        00:05
+        00:19
       </div>
     
     
@@ -431,7 +475,7 @@
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>Post</div>
-    <div class="sidebar-state-number">1</div>
+    <div class="sidebar-state-number">2</div>
   </div>
   <div class="sidebar-state-category">
     <div>Category</div>
@@ -439,7 +483,7 @@
   </div>
   <div class="sidebar-state-tag">
     <div>Tag</div>
-    <div class="sidebar-state-number">1</div>
+    <div class="sidebar-state-number">2</div>
   </div>
 </div>
 <div class="sidebar-social">

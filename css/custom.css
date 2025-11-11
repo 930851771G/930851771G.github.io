@@ -1,0 +1,72 @@
+/* 强制 KaTeX 显示为独立块级元素 */
+.katex-display {
+  display: block !important;
+  text-align: center; /* 居中公式，可按需改为 left */
+  position: relative !important;
+  width: 100% !important;
+  margin: 1em 0 !important;
+}
+
+/* 隐藏 MathML 部分，防止它占位 */
+.katex-display .katex-mathml {
+  display: none !important;
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+/* 公式编号绝对定位到右边 */
+.katex-display .tag {
+  position: absolute !important;
+  right: 0 !important;
+  top: 0;
+  transform: translateY(0);
+  color: #666;
+  white-space: nowrap;
+  font-size: 0.9em;
+  margin-left: 0.5em !important;
+}
+
+/* 确保公式主体不被压缩 */
+.katex-html {
+  display: inline-block !important;
+  width: auto !important;
+  white-space: nowrap !important;
+}
+
+
+/* 修复 KaTeX \tag 公式渲染时的空白布局问题 */
+.katex-display .katex-mathml mtable {
+  width: auto !important;
+}
+
+.katex-display .katex-mathml mtd[width="50%"] {
+  display: none !important;
+  width: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* 确保公式居中 */
+.katex-display .katex-html {
+  display: inline-block !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+
+/* 调整标签位置 */
+.katex-display .tag {
+  position: absolute !important;
+  right: 0 !important;
+  top: 0.1em !important;
+  white-space: nowrap !important;
+}
+
+/* 防止 MathML 影响排版（可选） */
+.katex .katex-mathml {
+  position: absolute !important;
+  left: -9999px !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}

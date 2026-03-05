@@ -324,11 +324,40 @@ window
   .off("hexo-blog-decrypt")
   .on("hexo-blog-decrypt", tocInit)
   .on("hexo-blog-decrypt", () => {
+    // 标记容器为已解密，触发 CSS 重置为普通文章样式
+    const container = _$("#hexo-blog-encrypt");
+    if (container) {
+      container.classList.add("hbe-decrypted");
+    }
+  })
+  .on("hexo-blog-decrypt", () => {
     const script = document.createElement("script");
     script.src = "/js/insert_highlight.js";
     script.setAttribute("data-pjax", true);
     document.body.appendChild(script);
   });
+
+// 为解密按钮绑定点击事件（插件本身只监听 Enter 键）
+(function bindHbeButton() {
+  const btn = _$("#hbeSubmitBtn");
+  if (btn) {
+    btn.off("click").on("click", () => {
+      const input = _$("#hbePass");
+      if (input) {
+        // 模拟按下 Enter 键，触发插件内部的 keydown 监听
+        const enterEvent = new KeyboardEvent("keydown", {
+          bubbles: true,
+          cancelable: true,
+          keyCode: 13,
+          which: 13,
+          key: "Enter",
+        });
+        input.dispatchEvent(enterEvent);
+      }
+    });
+  }
+})();
+
 tocInit();
 
 _$(".sponsor-button")

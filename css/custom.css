@@ -1,59 +1,36 @@
 /* KaTeX 样式 */
 .katex-display {
     display: block !important;
-    text-align: center;
-    position: relative !important;
-    width: 100% !important;
+    text-align: center !important;
     margin: 1em 0 !important;
+    overflow-x: auto !important;
 }
 
-.katex-display .katex-mathml {
-    display: none !important;
-    position: absolute !important;
-    width: 0 !important;
-    height: 0 !important;
-    overflow: hidden !important;
-}
-
-.katex-display .tag {
-    position: absolute !important;
-    right: 0 !important;
-    top: 0;
-    transform: translateY(0);
-    color: #666;
-    white-space: nowrap;
-    font-size: 0.9em;
-    margin-left: 0.5em !important;
-}
-
-.katex-html {
-    display: inline-block !important;
-    width: auto !important;
+/* 恢复 KaTeX 默认的 block 布局，让 \tag 的 absolute 定位正常工作 */
+.katex-display > .katex {
+    display: block !important;
+    text-align: center !important;
     white-space: nowrap !important;
 }
 
-.katex-display .katex-mathml mtable {
-    width: auto !important;
+.katex-display > .katex > .katex-html {
+    display: block !important;
+    position: relative !important;
 }
 
-.katex-display .katex-mathml mtd[width="50%"] {
-    display: none !important;
-    width: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
+.katex-display > .katex > .katex-html > .tag {
+    position: absolute !important;
+    right: 0 !important;
+    color: #666;
 }
 
-.katex-display .katex-html {
-    display: inline-block !important;
-    text-align: center !important;
-    width: 100% !important;
-}
-
+/* 隐藏 MathML（屏幕阅读器保留，视觉上隐藏） */
 .katex .katex-mathml {
     position: absolute !important;
     left: -9999px !important;
-    height: 0 !important;
+    height: 1px !important;
     overflow: hidden !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
 /* ========================================

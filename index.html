@@ -240,7 +240,7 @@
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>Post</div>
-    <div class="sidebar-state-number">8</div>
+    <div class="sidebar-state-number">9</div>
   </div>
   <div class="sidebar-state-category">
     <div>Category</div>
@@ -321,10 +321,58 @@
       <div class="post-wrapper">
   <div class="post-wrap left" data-aos="fade-up">
     
-      <a class="post-link" href="/2026/03/15/paper-unisid/" aria-label="UniSID" title="UniSID"></a>
+      <a class="post-link" href="/2026/03/20/paper-etegrec/" aria-label="EtegRec" title="EtegRec"></a>
     
     
     <div class="post-cover left">
+      
+        <img data-src="/images/cover/clove3.jpg" data-sizes="auto" alt="EtegRec" class="lazyload">
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2026-03-20</span>
+        
+        <span><span class="icon-pencil"></span>3.6k words</span>
+        <span><span class="icon-clock"></span>16 mins</span>
+      </div>
+      <h2 class="post-title">EtegRec</h2>
+      <article class="post-article">
+        
+           ETEGREC
+ 1.Introduction
+
+
+问题：
+现有生成式推荐，SID生成与产生推荐结果两个阶段完全解耦，造成以下缺点：
+
+item tokenizer感受不到推荐效果、也感受不到推荐要优化的目标。
+后面的recommender看不到最开始item的上下文信息，只能看到物品最后SID。
+后面的推荐相关训练不能用来重新优化前面学习到的SID，无法精炼item SID。
+
+
+
+工作：
+提出双编码器-解码器框架，可以将项目标记器和生成推荐器联合优化。
+设计了面向推荐的两种校准方法：序列-项目校准、偏好-语义校准。
+目的：无缝整合标记器和推荐器，促进二者协同增强。
+
+
+ 2.METHOD
+        
+      </article>
+    </div>
+  </div>
+</div>
+      
+    
+      <div class="post-wrapper">
+  <div class="post-wrap right" data-aos="fade-up">
+    
+      <a class="post-link" href="/2026/03/15/paper-unisid/" aria-label="UniSID" title="UniSID"></a>
+    
+    
+    <div class="post-cover right">
       
         <img data-src="/images/cover/fade1.jpg" data-sizes="auto" alt="UniSID" class="lazyload">
       
@@ -348,12 +396,12 @@
       
     
       <div class="post-wrapper">
-  <div class="post-wrap right" data-aos="fade-up">
+  <div class="post-wrap left" data-aos="fade-up">
     
       <a class="post-link" href="/2026/03/10/paper-letter/" aria-label="LETTER" title="LETTER"></a>
     
     
-    <div class="post-cover right">
+    <div class="post-cover left">
       
         <img data-src="/images/cover/rayna1.jpg" data-sizes="auto" alt="LETTER" class="lazyload">
       
@@ -377,12 +425,12 @@
       
     
       <div class="post-wrapper">
-  <div class="post-wrap left" data-aos="fade-up">
+  <div class="post-wrap right" data-aos="fade-up">
     
       <a class="post-link" href="/2026/01/29/Gemini-Toc-Project/" aria-label="Gemini-Toc-Project" title="Gemini-Toc-Project"></a>
     
     
-    <div class="post-cover left">
+    <div class="post-cover right">
       
         <img data-src="/images/cover/clove2.webp" data-sizes="auto" alt="Gemini-Toc-Project" class="lazyload">
       
@@ -421,12 +469,12 @@ Chrome Runtime Mess
       
     
       <div class="post-wrapper">
-  <div class="post-wrap right" data-aos="fade-up">
+  <div class="post-wrap left" data-aos="fade-up">
     
       <a class="post-link" href="/2025/11/04/Precise-paper/" aria-label="PRECISE" title="PRECISE"></a>
     
     
-    <div class="post-cover right">
+    <div class="post-cover left">
       
         <img data-src="/images/cover/jett2.webp" data-sizes="auto" alt="PRECISE" class="lazyload">
       
@@ -466,12 +514,12 @@ LLM-To-Rec范式：
       
     
       <div class="post-wrapper">
-  <div class="post-wrap left" data-aos="fade-up">
+  <div class="post-wrap right" data-aos="fade-up">
     
       <a class="post-link" href="/2025/10/28/Tiger-paper/" aria-label="TIGER" title="TIGER"></a>
     
     
-    <div class="post-cover left">
+    <div class="post-cover right">
       
         <img data-src="/images/cover/jett1.webp" data-sizes="auto" alt="TIGER" class="lazyload">
       
@@ -510,12 +558,12 @@ tiger作为生成式推荐里极具代表性的文章，本文主要总结TIGER�
       
     
       <div class="post-wrapper">
-  <div class="post-wrap right" data-aos="fade-up">
+  <div class="post-wrap left" data-aos="fade-up">
     
       <a class="post-link" href="/2025/10/22/blog-setup-tutorial/" aria-label="blog_setup_tutorial" title="blog_setup_tutorial"></a>
     
     
-    <div class="post-cover right">
+    <div class="post-cover left">
       
         <img data-src="/images/cover/clove1.webp" data-sizes="auto" alt="blog_setup_tutorial" class="lazyload">
       
@@ -554,12 +602,12 @@ tiger作为生成式推荐里极具代表性的文章，本文主要总结TIGER�
       
     
       <div class="post-wrapper">
-  <div class="post-wrap left" data-aos="fade-up">
+  <div class="post-wrap right" data-aos="fade-up">
     
       <a class="post-link" href="/2025/03/05/test-img/" aria-label="test-img" title="test-img"></a>
     
     
-    <div class="post-cover left">
+    <div class="post-cover right">
       
         
         
@@ -588,12 +636,12 @@ tiger作为生成式推荐里极具代表性的文章，本文主要总结TIGER�
       
     
       <div class="post-wrapper">
-  <div class="post-wrap right" data-aos="fade-up">
+  <div class="post-wrap left" data-aos="fade-up">
     
       <a class="post-link" href="/2025/03/04/test-encrypt/" aria-label="test-encrypt" title="test-encrypt"></a>
     
     
-    <div class="post-cover right">
+    <div class="post-cover left">
       
         
         
@@ -650,10 +698,10 @@ tiger作为生成式推荐里极具代表性的文章，本文主要总结TIGER�
     
       <div>
         <span class="icon-brush"></span>
-        17.3k
+        21k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        01:17
+        01:33
       </div>
     
     
@@ -690,7 +738,7 @@ tiger作为生成式推荐里极具代表性的文章，本文主要总结TIGER�
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>Post</div>
-    <div class="sidebar-state-number">8</div>
+    <div class="sidebar-state-number">9</div>
   </div>
   <div class="sidebar-state-category">
     <div>Category</div>
